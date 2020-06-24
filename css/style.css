@@ -757,13 +757,13 @@
 	#header
 	{
 		position: relative;
-		background: #FFFFFF;
+		background: #FFF;
 	}
 
 		#header .container
 		{
 			position: relative;
-			padding: 3em 0em;
+			padding: 4em 0em;
 		}
 
 /*********************************************************************************/
@@ -774,7 +774,7 @@
 	{
 		position: absolute;
 		left: 0em;
-		top: 2em;
+		top: 3em;
 	}
 	
 		#logo h1
@@ -797,85 +797,44 @@
 	{
 		position: absolute;
 		right: 0em;
-		top: 1.5em;
-		margin:0;
-		padding-top:0;
-		list-style: none;
+		top: 2.2em;
+	}
+
+		#nav > ul > li
+		{
+			float: left;
+		}
 		
-	}
-	#nav li{
-		position: relative;
-		white-space: nowrap;
-		
-	}
-	#nav > ul > li
-	{
-		float: left;
-			
-		
-	}
-	#nav > ul > li:last-child
-	{
-		padding-right: 0;
-		border-right: none;
-	}
-	#nav > ul ul{
-	  position: absolute;
-	  z-index: 99;
-	  left: -1px;
-	  top: 100%;
-	  
-	/*  min-width: 180px;*/
-	  
-	}
-	#nav > ul > li  a,
-	#nav > ul > li > span
-	{
-		background-color: #FFFFFF;
-		display: block;
-		margin-left: 0.7em;
-		padding: 0.60em 1.2em;
-		letter-spacing: 0.06em;
-		text-decoration: none;
-		text-transform: uppercase;
-		font-size: 0.8em;
-		outline: 0;
-		height:3em;
-		color: #333;
-		
-	}
-	#nav li.active a
-	{
-	    color: #ff8888; 
-		/*border-radius: 5px;*/
-	}
-	#nav > ul > li  a:hover {
-	  /* 滑鼠滑入按鈕變色
-	  background-color: #e95d3c;
-	  color: #fff; */
-	  background-color: #EEEEEE;
-	  color: #ff8888; 
-	  
-	 
-	}
-	#nav > ul > li:hover>a{
-	  /* 滑鼠滑入按鈕變色*/
-	  background-color: #EEEEEE;
-	  color: #ff8888; 
-	  border-radius: 5px;
-	}
-	#nav > ul > li ul {
-		/*隱藏次選單*/
-		display: none;
-	}
-	#nav > ul >li:hover>ul {
-		/* 滑鼠滑入展開次選單*/
-		
-		display: block;
-	}
-		
-	
-			
+			#nav > ul > li:last-child
+			{
+				padding-right: 0;
+			}
+
+			#nav > ul > li > a,
+			#nav > ul > li > span
+			{
+				display: block;
+				margin-left: 0.7em;
+				padding: 0.80em 1.2em;
+				letter-spacing: 0.06em;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-size: 1.1em;
+				outline: 0;
+				color: #333;
+			}
+
+			#nav li.active a
+			{
+				background: #e95d3c;
+				border-radius: 5px;
+				color: #FFF;
+			}
+
+			#nav > ul > li > ul
+			{
+				display: none;
+			}
 	
 /*********************************************************************************/
 /* Banner                                                                        */
@@ -883,12 +842,11 @@
 
 	#banner
 	{
-	/*	position: relative; */
+		position: relative;
 		padding: 12em 0em;
 		background: url(../images/banner.jpg) no-repeat center;
 		background-size: cover;
 		color: #fff;
-		
 	}
 
 /*********************************************************************************/
@@ -899,7 +857,6 @@
 	{
 		position: relative;
 		background: #fff;
-		border-left:7px red solid;
 	}
 
 	#main
